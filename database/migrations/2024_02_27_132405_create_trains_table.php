@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
-            $table->string('agency', 128);
+            $table->string('agency', 64);
             $table->string('station_start', 64)->nullable();
             $table->string('station_end', 64)->nullable();
             $table->dateTime('time_start', $precision = 0)->nullable();

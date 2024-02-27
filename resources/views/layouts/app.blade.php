@@ -14,30 +14,14 @@
 
         @yield('head-imports')
     </head>
-    <body>
+    <body class="bg-dark text-white text-center">
 
         @include('partials.header')
 
-        <main>
+        <main class="pt-5">
             <div class="container">
 
-                <div class="row">
-
-                    <div class="col">
-
-                        <div>
-                            <img class="gatto-img" src="{{ Vite::asset('resources/img/gatto.webp') }}" alt="Gatto">
-                        </div>
-
-                        <div class="gatto-bg">
-                            QUESTO DIV AVRA' COME SFONDO IL GATTO
-                        </div>
-
-                        @yield('main-content')
-
-                    </div>
-
-                </div>
+                @yield('main-content')
 
             </div>
         </main>
